@@ -1,0 +1,33 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* src/App.css */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input,
+form button {
+  margin: 5px 0;
+}
+
+@media (min-width: 600px) {
+  /* Desktop styles */
+  .expense-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Mobile styles */
+  .expense-list {
+    display: block;
+  }
+}
